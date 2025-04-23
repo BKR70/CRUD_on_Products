@@ -1,6 +1,8 @@
 ﻿using CRUD_YouTube.DataAccess.Repository.IRepository;
 using CRUD_YouTube.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Collections.Generic;
 
 namespace CRUD_YouTube.Web.Areas.Admin.Controllers
 {
@@ -19,6 +21,12 @@ namespace CRUD_YouTube.Web.Areas.Admin.Controllers
         }
         public IActionResult Create()
         {
+            IEnumerable<SelectListItem> CategoryList = _db.Category.GetAll().Select(u => new SelectListItem
+            {
+                Text = u.Name,
+                Value = u.Id.ToString()
+            });
+            ViewBag.CategoryList = CategoryList;
             return View();
         }
         [HttpPost]
