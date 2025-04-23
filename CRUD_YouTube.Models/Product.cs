@@ -36,6 +36,8 @@ namespace CRUD_YouTube.Models
         [Range(1, 1000)]
         public double Price100 { get; set; }
 
+
+        [DisplayName("Category")]
         public int CategoryId { get; set; }
         [ForeignKey("CategoryId")]
         public Category Category { get; set; }
