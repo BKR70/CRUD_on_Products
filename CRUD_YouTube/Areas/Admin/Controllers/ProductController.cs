@@ -26,7 +26,12 @@ namespace CRUD_YouTube.Web.Areas.Admin.Controllers
                 Text = u.Name,
                 Value = u.Id.ToString()
             });
-            ViewBag.CategoryList = CategoryList;
+            //01.
+            //ViewBag.CategoryList = CategoryList;
+
+            //02.
+            ViewData["CategoryList"] = CategoryList;
+
             return View();
         }
         [HttpPost]
