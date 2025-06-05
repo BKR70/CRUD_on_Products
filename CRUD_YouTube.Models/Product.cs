@@ -37,11 +37,12 @@ namespace CRUD_YouTube.Models
         public double Price100 { get; set; }
 
 
+//      Foreign key relationship
+
         [DisplayName("Category")]
         public int CategoryId { get; set; }
         [ForeignKey("CategoryId")]
         public Category Category { get; set; }
-
         public string ImageUrl { get; set; }
 
     }

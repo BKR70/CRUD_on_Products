@@ -1,5 +1,6 @@
 ﻿using CRUD_YouTube.DataAccess.Repository.IRepository;
 using CRUD_YouTube.Models;
+using CRUD_YouTube.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Collections.Generic;
@@ -21,18 +22,32 @@ namespace CRUD_YouTube.Web.Areas.Admin.Controllers
         }
         public IActionResult Create()
         {
+            // Projection in ef-core
+
+            /**
             IEnumerable<SelectListItem> CategoryList = _db.Category.GetAll().Select(u => new SelectListItem
             {
                 Text = u.Name,
                 Value = u.Id.ToString()
             });
+            */
             //01.
             //ViewBag.CategoryList = CategoryList;
 
             //02.
-            ViewData["CategoryList"] = CategoryList;
+            //ViewData["CategoryList"] = CategoryList;
 
-            return View();
+            //03. 
+            ProductVM productVM = new()
+            {
+                CategoryList = _db.Category.GetAll().Select(u => new SelectListItem
+                {
+                    Text = u.Name,
+                    Value = u.Id.ToString()
+                }),
+                Product = new Product()
+            };
+            return View(productVM);
         }
         [HttpPost]
         public IActionResult Create(Product obj)
