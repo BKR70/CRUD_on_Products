@@ -50,16 +50,25 @@ namespace CRUD_YouTube.Web.Areas.Admin.Controllers
             return View(productVM);
         }
         [HttpPost]
-        public IActionResult Create(ProductVM obj)
+        public IActionResult Create(ProductVM productVM)
         {
             if (ModelState.IsValid)
             {
-                _db.Product.Add(obj.Product);
+                _db.Product.Add(productVM.Product);
                 _db.Save();
                 TempData["success"] = "Product created successfully";
                 return RedirectToAction("Index");
             }
-            return View();
+            else
+            {
+                // For not showing ugly exception message when validation failed, it will stay on the same page.
+                productVM.CategoryList = _db.Category.GetAll().Select(u => new SelectListItem
+                {
+                    Text = u.Name,
+                    Value = u.Id.ToString()
+                });
+                return View(productVM);
+            }
         }
         public IActionResult Edit(int? id)
         {
