@@ -50,11 +50,11 @@ namespace CRUD_YouTube.Web.Areas.Admin.Controllers
             return View(productVM);
         }
         [HttpPost]
-        public IActionResult Create(Product obj)
+        public IActionResult Create(ProductVM obj)
         {
             if (ModelState.IsValid)
             {
-                _db.Product.Add(obj);
+                _db.Product.Add(obj.Product);
                 _db.Save();
                 TempData["success"] = "Product created successfully";
                 return RedirectToAction("Index");
