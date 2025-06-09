@@ -128,6 +128,7 @@ namespace CRUD_YouTube.Web.Areas.Admin.Controllers
             return Json(new {data =  ProductList});
         }
 
+        [HttpDelete]
         public IActionResult Delete(int? id)
         {
             var prodToBeDeleted = _db.Product.Get(u=>u.Id==id);
