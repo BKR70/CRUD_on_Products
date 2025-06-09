@@ -119,20 +119,6 @@ namespace CRUD_YouTube.Web.Areas.Admin.Controllers
             }
         }  
 
-        [ActionName("Delete")]
-        public IActionResult DeleteProduct(int? id)
-        {
-            Product? obj = _db.Product.Get(u => u.Id == id);
-            if (obj == null)
-            {
-                return NotFound();
-            }
-            _db.Product.Remove(obj);
-            _db.Save();
-            TempData["success"] = "Product deleted successfully";
-            return RedirectToAction("Index");
-        }
-
         #region API CALLS
 
         [HttpGet]
@@ -140,6 +126,24 @@ namespace CRUD_YouTube.Web.Areas.Admin.Controllers
         {
             List<Product> ProductList = _db.Product.GetAll(includeProperties: "Category").ToList();
             return Json(new {data =  ProductList});
+        }
+
+        public IActionResult Delete(int? id)
+        {
+            var prodToBeDeleted = _db.Product.Get(u=>u.Id==id);
+            if(prodToBeDeleted == null)
+            {
+                return Json(new { success = false, message = "Error while deleting" });
+            }
+
+            var oldImagePath = Path.Combine(_webHostEnvironment.WebRootPath, prodToBeDeleted.ImageUrl.TrimStart('\\'));
+            if (System.IO.File.Exists(oldImagePath))
+            {
+                System.IO.File.Delete(oldImagePath);
+            }
+            _db.Product.Remove(prodToBeDeleted);
+            _db.Save();
+            return Json(new { success = true, message = "Delete Successful" });
         }
         #endregion
     }
