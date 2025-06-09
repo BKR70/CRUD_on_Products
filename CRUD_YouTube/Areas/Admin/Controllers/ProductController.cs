@@ -132,5 +132,15 @@ namespace CRUD_YouTube.Web.Areas.Admin.Controllers
             TempData["success"] = "Product deleted successfully";
             return RedirectToAction("Index");
         }
+
+        #region API CALLS
+
+        [HttpGet]
+        public IActionResult GetAll()
+        {
+            List<Product> ProductList = _db.Product.GetAll(includeProperties: "Category").ToList();
+            return Json(new {data =  ProductList});
+        }
+        #endregion
     }
 }
