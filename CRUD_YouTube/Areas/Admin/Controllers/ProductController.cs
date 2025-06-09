@@ -21,7 +21,7 @@ namespace CRUD_YouTube.Web.Areas.Admin.Controllers
         }
         public IActionResult Index()
         {
-            List<Product> ProductList = _db.Product.GetAll().ToList();
+            List<Product> ProductList = _db.Product.GetAll(includeProperties:"Category").ToList();
             return View(ProductList);
         }
 
