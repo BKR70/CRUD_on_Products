@@ -13,6 +13,7 @@ namespace CRUD_YouTube.DataAccess.Data
         }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<ApplicationUser> ApplicationUsers { get; set; }
 
         // Category created statically
         protected override void OnModelCreating(ModelBuilder modelBuilder)
