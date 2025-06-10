@@ -1,9 +1,10 @@
 ﻿using CRUD_YouTube.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace CRUD_YouTube.DataAccess.Data
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) 
         {
@@ -15,6 +16,8 @@ namespace CRUD_YouTube.DataAccess.Data
         // Category created statically
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
             modelBuilder.Entity<Category>().HasData(
                 new Category { Id = 1, Name = "Bat", DisplayOrder = 33 },
                 new Category { Id = 2, Name = "Ball", DisplayOrder = 10 },
