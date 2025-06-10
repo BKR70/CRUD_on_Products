@@ -10,6 +10,7 @@ namespace CRUD_YouTube.Models
 {
     public class ApplicationUser : IdentityUser
     {
+        // Adding more columns to the default identity user.
         [Required]
         public string Name { get; set; }
         public string? StreetAddress { get; set; }
