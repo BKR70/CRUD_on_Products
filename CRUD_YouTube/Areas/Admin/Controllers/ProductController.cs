@@ -1,6 +1,8 @@
 ﻿using CRUD_YouTube.DataAccess.Repository.IRepository;
 using CRUD_YouTube.Models;
 using CRUD_YouTube.Models.ViewModels;
+using CRUD_YouTube.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Collections.Generic;
@@ -8,6 +10,7 @@ using System.Collections.Generic;
 namespace CRUD_YouTube.Web.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin)]
     public class ProductController : Controller
     {
         private readonly IUnitOfWork _db;

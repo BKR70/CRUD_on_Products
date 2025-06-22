@@ -1,10 +1,13 @@
 ﻿using CRUD_YouTube.DataAccess.Repository.IRepository;
 using CRUD_YouTube.Models;
+using CRUD_YouTube.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CRUD_YouTube.Web.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin)]       // It is also used before each method instead of being used globally.
     public class CategoryController : Controller
     {
         private readonly IUnitOfWork _db;
@@ -12,6 +15,8 @@ namespace CRUD_YouTube.Web.Areas.Admin.Controllers
         {
             _db = db;
         }
+
+       // [Authorize(Roles = SD.Role_Admin)]
         public IActionResult Index()
         {
             List<Category> CategoryList = _db.Category.GetAll().ToList();
