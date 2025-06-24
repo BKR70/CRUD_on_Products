@@ -29,7 +29,7 @@
    cd CRUD_on_Products
 
 2. **Open the project in Visual Studio**
-   - Open PropertyManagementSystem.sln
+   - Open CRUD_YouTube.sln
     
 3. **Set up the database**
    - Edit `appsettings.json` with your SQL Server connection string.
