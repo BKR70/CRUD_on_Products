@@ -25,8 +25,8 @@
 ## ⚡ Installation
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/BKR70/MVC_Project.git
-   cd MVC_Project
+   git clone https://github.com/BKR70/CRUD_on_Products.git
+   cd CRUD_on_Products
 
 2. **Open the project in Visual Studio**
    - Open PropertyManagementSystem.sln
