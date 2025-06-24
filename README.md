@@ -1,5 +1,5 @@
 # ProductTrackr 🚀
-ProductTrackr is a web-based product inventory management system built using ASP.NET Core MVC, Entity Framework Core, and SQL Server. It allows users to perform essential CRUD operations on product data with a clean UI, form validation, and role-based access.
+**ProductTrackr** is a web-based product inventory management system built using **ASP.NET Core MVC**, **Entity Framework Core**, and **SQL Server**. It allows users to perform essential **CRUD operations** on product data with a clean UI, form validation, and role-based access.
 
 ## 🚀 Features
 
