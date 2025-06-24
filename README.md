@@ -53,6 +53,9 @@ These are some of the key resources I used while building this project. They are
 ### 🎥 YouTube Tutorials
 - [ASP.NET Core MVC Full Course (.NET 8) - 
 DotNetMastery](https://www.youtube.com/watch?v=AopeJjkcRvU)
+- [Build a CRUD App in ASP.NET Core MVC – CodeAcademy](https://www.youtube.com/watch?v=BfEjDD8mWYg)
+- [ASP.NET Core MVC Tutorial for Beginners – Kudvenkat](https://www.youtube.com/playlist?list=PL6n9fhu94yhWKHkcL7RJmmXyxkuFB3KSl)
+
 
 ## 🛠️ Technologies Used
    -    ASP.NET Core MVC
