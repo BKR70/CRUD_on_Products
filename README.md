@@ -22,4 +22,28 @@
   - **Admin**: Full access to manage products.  
   - **User**: Read-only access to browse product listings.
 
+## ⚡ Installation
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/BKR70/MVC_Project.git
+   cd MVC_Project
 
+2. **Open the project in Visual Studio**
+   - Open PropertyManagementSystem.sln
+    
+3. **Set up the database**
+   - Edit `appsettings.json` with your SQL Server connection string.
+   - Run the following in **Package Manager Console**:
+     ```bash
+     Add-Migration InitialCreate
+     Update-Database
+     ```
+   - This will apply Entity Framework migrations and create the required database schema.
+     
+4. **Run the application**
+   - click the **Start** button in Visual Studio.
+
+## 🛠️ Technologies Used
+   -    ASP.NET Core MVC
+   -    Entity Framework Core
+   -    MS SQL Server
