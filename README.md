@@ -43,6 +43,17 @@
 4. **Run the application**
    - click the **Start** button in Visual Studio.
 
+## 📖 Learning Resources
+These are some of the key resources I used while building this project. They are great for understanding ASP.NET Core, Entity Framework, and CRUD operations.
+
+### 📘 Official Documentation
+- [ASP.NET Core Documentation](https://dotnettutorials.net/lesson/introduction-asp-net-core-mvc/)
+- [Entity Framework Core Documentation](https://dotnettutorials.net/lesson/entity-framework-core/)
+
+### 🎥 YouTube Tutorials
+- [ASP.NET Core MVC Full Course (.NET 8) - 
+DotNetMastery](https://www.youtube.com/watch?v=AopeJjkcRvU)
+
 ## 🛠️ Technologies Used
    -    ASP.NET Core MVC
    -    Entity Framework Core
