@@ -1,13 +1,13 @@
-﻿using CRUD_YouTube.DataAccess.Repository.IRepository;
-using CRUD_YouTube.Models;
-using CRUD_YouTube.Models.ViewModels;
-using CRUD_YouTube.Utility;
+﻿using CRUD.DataAccess.Repository.IRepository;
+using CRUD.Models;
+using CRUD.Models.ViewModels;
+using CRUD.Utility;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Collections.Generic;
 
-namespace CRUD_YouTube.Web.Areas.Admin.Controllers
+namespace CRUDWeb.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Authorize(Roles = SD.Role_Admin)]

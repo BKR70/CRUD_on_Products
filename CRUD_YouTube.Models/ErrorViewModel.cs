@@ -1,4 +1,4 @@
-namespace CRUD_YouTube.Models
+namespace CRUD.Models
 {
     public class ErrorViewModel
     {

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CRUD_YouTube.Models
+namespace CRUD.Models
 {
     public class ApplicationUser : IdentityUser
     {

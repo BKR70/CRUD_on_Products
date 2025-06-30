@@ -1,9 +1,9 @@
-﻿using CRUD_YouTube.Models;
+﻿using CRUD.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace CRUD_YouTube.DataAccess.Data
+namespace CRUD.DataAccess.Data
 {
     public class ApplicationDbContext : IdentityDbContext<IdentityUser>
     {

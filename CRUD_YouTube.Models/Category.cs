@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace CRUD_YouTube.Models
+namespace CRUD.Models
 {
     public class Category
     {

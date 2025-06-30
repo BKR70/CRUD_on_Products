@@ -1,10 +1,10 @@
-using CRUD_YouTube.DataAccess.Data;
-using CRUD_YouTube.DataAccess.Repository;
-using CRUD_YouTube.DataAccess.Repository.IRepository;
+using CRUD.DataAccess.Data;
+using CRUD.DataAccess.Repository;
+using CRUD.DataAccess.Repository.IRepository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
-using CRUD_YouTube.Utility;
+using CRUD.Utility;
 
 var builder = WebApplication.CreateBuilder(args);
 

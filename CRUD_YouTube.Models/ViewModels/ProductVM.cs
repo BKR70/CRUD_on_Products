@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace CRUD_YouTube.Models.ViewModels
+namespace CRUD.Models.ViewModels
 {
     public class ProductVM
     {

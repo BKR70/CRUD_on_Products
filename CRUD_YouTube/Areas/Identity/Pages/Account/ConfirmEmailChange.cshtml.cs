@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 
-namespace CRUD_YouTube.Web.Areas.Identity.Pages.Account
+namespace CRUDWeb.Areas.Identity.Pages.Account
 {
     public class ConfirmEmailChangeModel : PageModel
     {

@@ -10,8 +10,8 @@ using System.Text;
 using System.Text.Encodings.Web;
 using System.Threading;
 using System.Threading.Tasks;
-using CRUD_YouTube.Models;
-using CRUD_YouTube.Utility;
+using CRUD.Models;
+using CRUD.Utility;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -23,7 +23,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
 
-namespace CRUD_YouTube.Web.Areas.Identity.Pages.Account
+namespace CRUDWeb.Areas.Identity.Pages.Account
 {
     public class RegisterModel : PageModel
     {

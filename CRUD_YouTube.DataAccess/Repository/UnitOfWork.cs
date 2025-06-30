@@ -1,12 +1,12 @@
-﻿using CRUD_YouTube.DataAccess.Data;
-using CRUD_YouTube.DataAccess.Repository.IRepository;
+﻿using CRUD.DataAccess.Data;
+using CRUD.DataAccess.Repository.IRepository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CRUD_YouTube.DataAccess.Repository
+namespace CRUD.DataAccess.Repository
 {
     public class UnitOfWork : IUnitOfWork
     {

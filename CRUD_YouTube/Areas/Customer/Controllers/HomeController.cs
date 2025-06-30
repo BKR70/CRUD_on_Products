@@ -1,9 +1,9 @@
 using System.Diagnostics;
-using CRUD_YouTube.DataAccess.Repository.IRepository;
-using CRUD_YouTube.Models;
+using CRUD.DataAccess.Repository.IRepository;
+using CRUD.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CRUD_YouTube.Web.Areas.Customer.Controllers
+namespace CRUDWeb.Areas.Customer.Controllers
 {
     [Area("Customer")]
     public class HomeController : Controller

@@ -1,6 +1,6 @@
-﻿using CRUD_YouTube.DataAccess.Data;
-using CRUD_YouTube.DataAccess.Repository.IRepository;
-using CRUD_YouTube.Models;
+﻿using CRUD.DataAccess.Data;
+using CRUD.DataAccess.Repository.IRepository;
+using CRUD.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CRUD_YouTube.DataAccess.Repository
+namespace CRUD.DataAccess.Repository
 {
     public class ProductRepository : Repository<Product>, IProductRepository
     {

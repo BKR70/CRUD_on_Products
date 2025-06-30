@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace CRUD_YouTube.DataAccess.Migrations
+namespace CRUD.DataAccess.Migrations
 {
     /// <inheritdoc />
     public partial class InitialCreate2 : Migration

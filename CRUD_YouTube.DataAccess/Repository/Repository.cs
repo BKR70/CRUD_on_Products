@@ -4,11 +4,11 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using CRUD_YouTube.DataAccess.Data;
-using CRUD_YouTube.DataAccess.Repository.IRepository;
+using CRUD.DataAccess.Data;
+using CRUD.DataAccess.Repository.IRepository;
 using Microsoft.EntityFrameworkCore;
 
-namespace CRUD_YouTube.DataAccess.Repository
+namespace CRUD.DataAccess.Repository
 {
     public class Repository<T> : IRepository<T> where T : class
     {

@@ -12,7 +12,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 
-namespace CRUD_YouTube.Web.Areas.Identity.Pages.Account
+namespace CRUDWeb.Areas.Identity.Pages.Account
 {
     public class LoginWith2faModel : PageModel
     {

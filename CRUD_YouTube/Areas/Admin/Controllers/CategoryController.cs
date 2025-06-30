@@ -1,10 +1,10 @@
-﻿using CRUD_YouTube.DataAccess.Repository.IRepository;
-using CRUD_YouTube.Models;
-using CRUD_YouTube.Utility;
+﻿using CRUD.DataAccess.Repository.IRepository;
+using CRUD.Models;
+using CRUD.Utility;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CRUD_YouTube.Web.Areas.Admin.Controllers
+namespace CRUDWeb.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Authorize(Roles = SD.Role_Admin)]       // It is also used before each method instead of being used globally.

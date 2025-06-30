@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CRUD_YouTube.Utility
+namespace CRUD.Utility
 {
     public class EmailSender : IEmailSender
     {

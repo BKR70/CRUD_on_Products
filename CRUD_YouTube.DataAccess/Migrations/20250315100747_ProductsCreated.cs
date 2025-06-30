@@ -4,7 +4,7 @@
 
 #pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
 
-namespace CRUD_YouTube.DataAccess.Migrations
+namespace CRUD.DataAccess.Migrations
 {
     /// <inheritdoc />
     public partial class ProductsCreated : Migration

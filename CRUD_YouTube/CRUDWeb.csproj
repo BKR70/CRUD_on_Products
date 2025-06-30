@@ -19,9 +19,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CRUD_YouTube.DataAccess\CRUD_YouTube.DataAccess.csproj" />
-    <ProjectReference Include="..\CRUD_YouTube.Models\CRUD_YouTube.Models.csproj" />
-    <ProjectReference Include="..\CRUD_YouTube.Utility\CRUD_YouTube.Utility.csproj" />
+    <ProjectReference Include="..\CRUD_YouTube.DataAccess\CRUD.DataAccess.csproj" />
+    <ProjectReference Include="..\CRUD_YouTube.Models\CRUD.Models.csproj" />
+    <ProjectReference Include="..\CRUD_YouTube.Utility\CRUD.Utility.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace CRUD_YouTube.DataAccess.Migrations
+namespace CRUD.DataAccess.Migrations
 {
     /// <inheritdoc />
     public partial class addIdentityTables : Migration
